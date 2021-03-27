@@ -1,6 +1,10 @@
 # animation
 
+
+
 Estudando sobre animação em CSS
+
+[Visualização](https://joaoquinto.github.io/Animation/animation/index.html)
 
 [Fonte: Css Tricks](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
 
