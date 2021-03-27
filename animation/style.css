@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 
+ul:nth-child(1) {
+  margin-top: 100px;
+} */
+
+ul {
+  padding: 60px;
+  margin: 0 auto;
+  width: 500px;
+  border: 2px solid tomato;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  ul {
+    width: 300px;
+  }
+}
+
+ul li {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: black;
+  height: 100px;
+  width: 100px;
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+/* 
+
+Scale and Rotate 
+
+Scale trabalha no eixo x e y  "plano cartesiano" ou seja faz crescer para cima e baixo e para esquerda e direita
+
+Rotate trabalha com graus "deg" ou outras unids e também com x e y
+
+*/
+.scaleRotated li:hover {
+  animation: scaleRotated 5s;
+}
+
+@-webkit-keyframes scaleRotated {
+  20% {
+    transform: scale(1.2);
+    background-color: tomato;
+  }
+
+  25% {
+    transform: scale(1.2) rotate(50deg);
+    background-color: yellowgreen;
+  }
+  100% {
+    transform: scale(1.2) rotate(100deg);
+    background-color: blue;
+  }
+}
+@-moz-keyframes scaleRotated {
+  20% {
+    transform: scale(1.2);
+    background-color: tomato;
+  }
+
+  25% {
+    transform: scale(1.2) rotate(50deg);
+    background-color: yellowgreen;
+  }
+  100% {
+    transform: scale(1.2) rotate(100deg);
+    background-color: blue;
+  }
+}
+@-o-keyframes scaleRotated {
+  20% {
+    transform: scale(1.2);
+    background-color: tomato;
+  }
+
+  25% {
+    transform: scale(1.2) rotate(50deg);
+    background-color: yellowgreen;
+  }
+  100% {
+    transform: scale(1.2) rotate(100deg);
+    background-color: blue;
+  }
+}
+
+@keyframes scaleRotated {
+  20% {
+    transform: scale(1.2);
+    background-color: tomato;
+  }
+
+  25% {
+    transform: scale(1.2) rotate(50deg);
+    background-color: yellowgreen;
+  }
+  100% {
+    transform: scale(1.2) rotate(100deg);
+    background-color: blue;
+  }
+}
+
+/* 
+Translate trabalha no x e y  "plano cartesiano"
+
+*/
+.translate li:hover {
+  animation: translated 5s;
+}
+
+@-webkit-keyframes translated {
+  25% {
+    transform: translate(0px, -30px);
+    background-color: crimson;
+  }
+  50% {
+    transform: translate(0px, 30px);
+    background-color: darkmagenta;
+  }
+}
+@-moz-keyframes translated {
+  25% {
+    transform: translate(0px, -30px);
+    background-color: crimson;
+  }
+  50% {
+    transform: translate(0px, 30px);
+    background-color: darkmagenta;
+  }
+}
+@-o-keyframes translated {
+  25% {
+    transform: translate(0px, -30px);
+    background-color: crimson;
+  }
+  50% {
+    transform: translate(0px, 30px);
+    background-color: darkmagenta;
+  }
+}
+@keyframes translated {
+  25% {
+    transform: translate(0px, -30px);
+    background-color: crimson;
+  }
+  50% {
+    transform: translate(0px, 30px);
+    background-color: darkmagenta;
+  }
+}
