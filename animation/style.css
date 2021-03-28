@@ -8,10 +8,6 @@ li {
   padding: 0;
   list-style: none;
 }
-/* 
-ul:nth-child(1) {
-  margin-top: 100px;
-} */
 
 ul {
   padding: 60px;
@@ -25,12 +21,6 @@ ul {
   margin-bottom: 30px;
 }
 
-@media (max-width: 800px) {
-  ul {
-    width: 300px;
-  }
-}
-
 ul li {
   margin-left: 10px;
   margin-right: 10px;
@@ -38,6 +28,17 @@ ul li {
   height: 100px;
   width: 100px;
   flex: 1 1 calc(33.333% - 20px);
+}
+
+@media (max-width: 800px) {
+  ul {
+    width: 300px;
+  }
+
+  ul li {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 /* 
@@ -48,82 +49,114 @@ Scale trabalha no eixo x e y  "plano cartesiano" ou seja faz crescer para cima e
 
 Rotate trabalha com graus "deg" ou outras unids e também com x e y
 
+Estudar sobre: transform-origin
+
 */
 .scaleRotated li:hover {
   animation: scaleRotated 5s;
 }
 
 @-webkit-keyframes scaleRotated {
-  20% {
+  10% {
     transform: scale(1.2);
     background-color: tomato;
   }
 
-  25% {
-    transform: scale(1.2) rotate(50deg);
-    background-color: yellowgreen;
+  50% {
+    transform: scale(1.2) rotate(360deg);
+    background-color: blue;
   }
+
   100% {
-    transform: scale(1.2) rotate(100deg);
+    transform: scale(1.2) rotate(-360deg);
     background-color: blue;
   }
 }
 @-moz-keyframes scaleRotated {
-  20% {
+  10% {
     transform: scale(1.2);
     background-color: tomato;
   }
 
-  25% {
-    transform: scale(1.2) rotate(50deg);
-    background-color: yellowgreen;
+  50% {
+    transform: scale(1.2) rotate(360deg);
+    background-color: blue;
   }
+
   100% {
-    transform: scale(1.2) rotate(100deg);
+    transform: scale(1.2) rotate(-360deg);
     background-color: blue;
   }
 }
 @-o-keyframes scaleRotated {
-  20% {
+  10% {
     transform: scale(1.2);
     background-color: tomato;
   }
 
-  25% {
-    transform: scale(1.2) rotate(50deg);
-    background-color: yellowgreen;
+  50% {
+    transform: scale(1.2) rotate(360deg);
+    background-color: blue;
   }
+
   100% {
-    transform: scale(1.2) rotate(100deg);
+    transform: scale(1.2) rotate(-360deg);
     background-color: blue;
   }
 }
 
 @keyframes scaleRotated {
-  20% {
+  10% {
     transform: scale(1.2);
     background-color: tomato;
   }
 
-  25% {
-    transform: scale(1.2) rotate(50deg);
-    background-color: yellowgreen;
+  50% {
+    transform: scale(1.2) rotate(360deg);
+    background-color: blue;
+    transform-origin: top left;
   }
+
   100% {
-    transform: scale(1.2) rotate(100deg);
+    transform: scale(1.2) rotate(-360deg);
+    transform-origin: bottom right;
     background-color: blue;
   }
 }
 
 /* 
 Translate trabalha no x e y  "plano cartesiano"
-
+ 
 */
 .translate li:hover {
-  animation: translated 5s;
+  animation: topToBottom 5s;
 }
 
-@-webkit-keyframes translated {
+@-webkit-keyframes topToBottom {
+  25% {
+    transform: translate(0px, -30px);
+    background-color: crimson;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(0px, 30px);
+    border-radius: 50%;
+    background-color: darkmagenta;
+  }
+}
+@-moz-keyframes topToBottom {
+  25% {
+    transform: translate(0px, -30px);
+    background-color: crimson;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(0px, 30px);
+    border-radius: 50%;
+    background-color: darkmagenta;
+  }
+}
+@-o-keyframes topToBottom {
   25% {
     transform: translate(0px, -30px);
     background-color: crimson;
@@ -133,33 +166,113 @@ Translate trabalha no x e y  "plano cartesiano"
     background-color: darkmagenta;
   }
 }
-@-moz-keyframes translated {
+@keyframes topToBottom {
   25% {
     transform: translate(0px, -30px);
     background-color: crimson;
+    border-radius: 50%;
   }
   50% {
     transform: translate(0px, 30px);
+    border-radius: 50%;
     background-color: darkmagenta;
   }
 }
-@-o-keyframes translated {
+
+.translate li:hover:nth-child(2) {
+  animation: leftToRight 5s;
+}
+
+@-webkit-keyframes leftToRight {
   25% {
-    transform: translate(0px, -30px);
-    background-color: crimson;
+    transform: translate(-30px, 0px);
+    background-color: seagreen;
   }
   50% {
-    transform: translate(0px, 30px);
-    background-color: darkmagenta;
+    transform: translate(30px, 0px);
+    background-color: yellow;
   }
 }
-@keyframes translated {
+@-moz-keyframes leftToRight {
   25% {
-    transform: translate(0px, -30px);
-    background-color: crimson;
+    transform: translate(-30px, 0px);
+    background-color: seagreen;
   }
   50% {
-    transform: translate(0px, 30px);
-    background-color: darkmagenta;
+    transform: translate(30px, 0px);
+    background-color: yellow;
+  }
+}
+@-o-keyframes leftToRight {
+  25% {
+    transform: translate(-30px, 0px);
+    background-color: seagreen;
+  }
+  50% {
+    transform: translate(30px, 0px);
+    background-color: yellow;
+  }
+}
+@keyframes leftToRight {
+  25% {
+    transform: translate(-30px, 0px);
+    background-color: seagreen;
+  }
+  50% {
+    transform: translate(30px, 0px);
+    background-color: yellow;
+  }
+}
+
+.translate li:hover:nth-child(3) {
+  animation: rightToLeft 5s;
+}
+
+@-webkit-keyframes rightToLeft {
+  25% {
+    transform: translate(30px, 0px);
+    background-color: seagreen;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(-30px, 0px);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+}
+@-moz-keyframes rightToLeft {
+  25% {
+    transform: translate(30px, 0px);
+    background-color: seagreen;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(-30px, 0px);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+}
+@-o-keyframes rightToLeft {
+  25% {
+    transform: translate(30px, 0px);
+    background-color: seagreen;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(-30px, 0px);
+    background-color: yellow;
+    border-radius: 50%;
+  }
+}
+@keyframes rightToLeft {
+  25% {
+    transform: translate(30px, 0px);
+    background-color: seagreen;
+    border-radius: 50%;
+  }
+  50% {
+    transform: translate(-30px, 0px);
+    background-color: yellow;
+    border-radius: 50%;
   }
 }
