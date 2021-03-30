@@ -13,12 +13,13 @@ ul {
   padding: 60px;
   margin: 0 auto;
   width: 500px;
+  height: 300px;
   border: 2px solid tomato;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 ul li {
@@ -41,17 +42,6 @@ ul li {
   }
 }
 
-/* 
-
-Scale and Rotate 
-
-Scale trabalha no eixo x e y  "plano cartesiano" ou seja faz crescer para cima e baixo e para esquerda e direita
-
-Rotate trabalha com graus "deg" ou outras unids e também com x e y
-
-Estudar sobre: transform-origin
-
-*/
 .scaleRotated li:hover {
   animation: scaleRotated 5s;
 }
@@ -114,20 +104,187 @@ Estudar sobre: transform-origin
   50% {
     transform: scale(1.2) rotate(360deg);
     background-color: blue;
-    transform-origin: top left;
   }
 
   100% {
     transform: scale(1.2) rotate(-360deg);
-    transform-origin: bottom right;
     background-color: blue;
   }
 }
 
-/* 
-Translate trabalha no x e y  "plano cartesiano"
- 
-*/
+/* Segunda ul */
+.transform-orign-scale li {
+  animation: transform-orign-scale 10s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes transform-orign-scale {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: red;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: blue;
+    transform-origin: right;
+  }
+}
+
+@-moz-keyframes transform-orign-scale {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: red;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: blue;
+    transform-origin: right;
+  }
+}
+
+@-o-keyframes transform-orign-scale {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: red;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: blue;
+    transform-origin: right;
+  }
+}
+
+@keyframes transform-orign-scale {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: red;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: blue;
+    transform-origin: left;
+  }
+}
+
+.transform-orign-scale li:nth-child(2) {
+  animation: transform-orign-scale02 10s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes transform-orign-scale02 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: yellow;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: orange;
+    transform-origin: center;
+  }
+}
+
+@-moz-keyframes transform-orign-scale02 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: yellow;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: orange;
+    transform-origin: center;
+  }
+}
+
+@-o-keyframes transform-orign-scale02 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: yellow;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: orange;
+    transform-origin: center;
+  }
+}
+
+@keyframes transform-orign-scale02 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: yellow;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: orange;
+    transform-origin: center;
+  }
+}
+.transform-orign-scale li:nth-child(3) {
+  animation: transform-orign-scale03 10s;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes transform-orign-scale03 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: green;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: indigo;
+    transform-origin: right;
+  }
+}
+
+@-moz-keyframes transform-orign-scale03 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: green;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: indigo;
+    transform-origin: right;
+  }
+}
+
+@-o-keyframes transform-orign-scale03 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: green;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: indigo;
+    transform-origin: right;
+  }
+}
+
+@keyframes transform-orign-scale03 {
+  50% {
+    transform: scale(1.6);
+    transform-origin: top;
+    background-color: green;
+  }
+  100% {
+    transform: scale(-1.6);
+    background-color: indigo;
+    transform-origin: right;
+  }
+}
+
+/* Terceira ul */
+
 .translate li:hover {
   animation: topToBottom 5s;
 }
