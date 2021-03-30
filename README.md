@@ -11,8 +11,8 @@ Estudando sobre animação em CSS
 Basic Declaration & Usage
 
 ```css
-.NAME-YOUR-ANIMATIO li {
-  animation: transform-orign-scale 10s;
+.NAME-YOUR-ANIMATIO {
+  animation: NAME-YOUR-ANIMATION 10s;
   animation-iteration-count: infinite;
 }
 
