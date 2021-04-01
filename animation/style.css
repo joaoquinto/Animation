@@ -1,9 +1,5 @@
 * {
   box-sizing: border-box;
-}
-
-ul,
-li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -44,53 +40,56 @@ ul li {
 
 .scaleRotated li:hover {
   animation: scaleRotated 5s;
+  -webkit-animation: scaleRotated 5s;
+  -moz-animation: scaleRotated 5s;
+  -o-animation: scaleRotated 5s;
 }
 
 @-webkit-keyframes scaleRotated {
   10% {
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
     background-color: tomato;
   }
 
   50% {
-    transform: scale(1.2) rotate(360deg);
+    -webkit-transform: scale(1.2) rotate(360deg);
     background-color: blue;
   }
 
   100% {
-    transform: scale(1.2) rotate(-360deg);
+    -webkit-transform: scale(1.2) rotate(-360deg);
     background-color: blue;
   }
 }
 @-moz-keyframes scaleRotated {
   10% {
-    transform: scale(1.2);
+    -moz-transform: scale(1.2);
     background-color: tomato;
   }
 
   50% {
-    transform: scale(1.2) rotate(360deg);
+    -moz-transform: scale(1.2) rotate(360deg);
     background-color: blue;
   }
 
   100% {
-    transform: scale(1.2) rotate(-360deg);
+    -moz-transform: scale(1.2) rotate(-360deg);
     background-color: blue;
   }
 }
 @-o-keyframes scaleRotated {
   10% {
-    transform: scale(1.2);
+    -o-transform: scale(1.2);
     background-color: tomato;
   }
 
   50% {
-    transform: scale(1.2) rotate(360deg);
+    -o-transform: scale(1.2) rotate(360deg);
     background-color: blue;
   }
 
   100% {
-    transform: scale(1.2) rotate(-360deg);
+    -o-transform: scale(1.2) rotate(-360deg);
     background-color: blue;
   }
 }
@@ -116,44 +115,50 @@ ul li {
 .transform-orign-scale li {
   animation: transform-orign-scale 10s;
   animation-iteration-count: infinite;
+  -webkit-animation: transform-orign-scale 10s;
+  -moz-animation: transform-orign-scale 10s;
+  -o-animation: transform-orign-scale 10s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes transform-orign-scale {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -webkit-transform: scale(1.6);
+    -webkit-transform-origin: top;
     background-color: red;
   }
   100% {
-    transform: scale(-1.6);
+    -webkit-transform: scale(-1.6);
     background-color: blue;
-    transform-origin: right;
+    -webkit-transform-origin: right;
   }
 }
 
 @-moz-keyframes transform-orign-scale {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -moz-transform: scale(1.6);
+    -moz-transform-origin: top;
     background-color: red;
   }
   100% {
-    transform: scale(-1.6);
+    -moz-transform: scale(-1.6);
     background-color: blue;
-    transform-origin: right;
+    -moz-transform-origin: right;
   }
 }
 
 @-o-keyframes transform-orign-scale {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -o-transform: scale(1.6);
+    -o-transform-origin: top;
     background-color: red;
   }
   100% {
-    transform: scale(-1.6);
+    -o-transform: scale(-1.6);
     background-color: blue;
-    transform-origin: right;
+    -o-transform-origin: right;
   }
 }
 
@@ -177,38 +182,38 @@ ul li {
 
 @-webkit-keyframes transform-orign-scale02 {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -webkit-transform: scale(1.6);
+    -webkit-transform-origin: top;
     background-color: yellow;
   }
   100% {
-    transform: scale(-1.6);
+    -webkit-transform: scale(-1.6);
     background-color: orange;
-    transform-origin: center;
+    -webkit-transform-origin: center;
   }
 }
 
 @-moz-keyframes transform-orign-scale02 {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -moz-transform: scale(1.6);
+    -moz-transform-origin: top;
     background-color: yellow;
   }
   100% {
-    transform: scale(-1.6);
+    -moz-transform: scale(-1.6);
     background-color: orange;
-    transform-origin: center;
+    -moz-transform-origin: center;
   }
 }
 
 @-o-keyframes transform-orign-scale02 {
   50% {
-    transform: scale(1.6);
+    -o-transform: scale(1.6);
     transform-origin: top;
     background-color: yellow;
   }
   100% {
-    transform: scale(-1.6);
+    -o-transform: scale(-1.6);
     background-color: orange;
     transform-origin: center;
   }
@@ -229,44 +234,50 @@ ul li {
 .transform-orign-scale li:nth-child(3) {
   animation: transform-orign-scale03 10s;
   animation-iteration-count: infinite;
+  -webkit-animation: transform-orign-scale03 10s;
+  -moz-animation: transform-orign-scale03 10s;
+  -o-animation: transform-orign-scale03 10s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes transform-orign-scale03 {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -webkit-transform: scale(1.6);
+    -webkit-transform-origin: top;
     background-color: green;
   }
   100% {
-    transform: scale(-1.6);
+    -webkit-transform: scale(-1.6);
     background-color: indigo;
-    transform-origin: right;
+    -webkit-transform-origin: right;
   }
 }
 
 @-moz-keyframes transform-orign-scale03 {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -moz-transform: scale(1.6);
+    -moz-transform-origin: top;
     background-color: green;
   }
   100% {
-    transform: scale(-1.6);
+    -moz-transform: scale(-1.6);
     background-color: indigo;
-    transform-origin: right;
+    -moz-transform-origin: right;
   }
 }
 
 @-o-keyframes transform-orign-scale03 {
   50% {
-    transform: scale(1.6);
-    transform-origin: top;
+    -o-transform: scale(1.6);
+    -o-transform-origin: top;
     background-color: green;
   }
   100% {
-    transform: scale(-1.6);
+    -o-transform: scale(-1.6);
     background-color: indigo;
-    transform-origin: right;
+    -o-transform-origin: right;
   }
 }
 
@@ -287,39 +298,42 @@ ul li {
 
 .translate li:hover {
   animation: topToBottom 5s;
+  -webkit-animation: topToBottom 5s;
+  -moz-animation: topToBottom 5s;
+  -o-animation: topToBottom 5s;
 }
 
 @-webkit-keyframes topToBottom {
   25% {
-    transform: translate(0px, -30px);
+    -webkit-transform: translate(0px, -30px);
     background-color: crimson;
     border-radius: 50%;
   }
   50% {
-    transform: translate(0px, 30px);
+    -webkit-transform: translate(0px, 30px);
     border-radius: 50%;
     background-color: darkmagenta;
   }
 }
 @-moz-keyframes topToBottom {
   25% {
-    transform: translate(0px, -30px);
+    -moz-transform: translate(0px, -30px);
     background-color: crimson;
     border-radius: 50%;
   }
   50% {
-    transform: translate(0px, 30px);
+    -moz-transform: translate(0px, 30px);
     border-radius: 50%;
     background-color: darkmagenta;
   }
 }
 @-o-keyframes topToBottom {
   25% {
-    transform: translate(0px, -30px);
+    -o-transform: translate(0px, -30px);
     background-color: crimson;
   }
   50% {
-    transform: translate(0px, 30px);
+    -o-transform: translate(0px, 30px);
     background-color: darkmagenta;
   }
 }
@@ -338,35 +352,38 @@ ul li {
 
 .translate li:hover:nth-child(2) {
   animation: leftToRight 5s;
+  -webkit-animation: leftToRight 5s;
+  -moz-animation: leftToRight 5s;
+  -o-animation: leftToRight 5s;
 }
 
 @-webkit-keyframes leftToRight {
   25% {
-    transform: translate(-30px, 0px);
+    -webkit-transform: translate(-30px, 0px);
     background-color: seagreen;
   }
   50% {
-    transform: translate(30px, 0px);
+    -webkit-transform: translate(30px, 0px);
     background-color: yellow;
   }
 }
 @-moz-keyframes leftToRight {
   25% {
-    transform: translate(-30px, 0px);
+    -moz-transform: translate(-30px, 0px);
     background-color: seagreen;
   }
   50% {
-    transform: translate(30px, 0px);
+    -moz-transform: translate(30px, 0px);
     background-color: yellow;
   }
 }
 @-o-keyframes leftToRight {
   25% {
-    transform: translate(-30px, 0px);
+    -o-transform: translate(-30px, 0px);
     background-color: seagreen;
   }
   50% {
-    transform: translate(30px, 0px);
+    -o-transform: translate(30px, 0px);
     background-color: yellow;
   }
 }
@@ -387,36 +404,36 @@ ul li {
 
 @-webkit-keyframes rightToLeft {
   25% {
-    transform: translate(30px, 0px);
+    -webkit-transform: translate(30px, 0px);
     background-color: seagreen;
     border-radius: 50%;
   }
   50% {
-    transform: translate(-30px, 0px);
+    -webkit-transform: translate(-30px, 0px);
     background-color: yellow;
     border-radius: 50%;
   }
 }
 @-moz-keyframes rightToLeft {
   25% {
-    transform: translate(30px, 0px);
+    -moz-transform: translate(30px, 0px);
     background-color: seagreen;
     border-radius: 50%;
   }
   50% {
-    transform: translate(-30px, 0px);
+    -moz-transform: translate(-30px, 0px);
     background-color: yellow;
     border-radius: 50%;
   }
 }
 @-o-keyframes rightToLeft {
   25% {
-    transform: translate(30px, 0px);
+    -o-transform: translate(30px, 0px);
     background-color: seagreen;
     border-radius: 50%;
   }
   50% {
-    transform: translate(-30px, 0px);
+    -o-transform: translate(-30px, 0px);
     background-color: yellow;
     border-radius: 50%;
   }
@@ -431,5 +448,108 @@ ul li {
     transform: translate(-30px, 0px);
     background-color: yellow;
     border-radius: 50%;
+  }
+}
+
+.image-scale {
+  height: 250px;
+  align-items: center;
+}
+
+.image-scale li {
+  width: 0px;
+  height: 0px;
+}
+
+.image-scale li img {
+  display: block;
+  max-width: 100%;
+  animation: imageScale 5s infinite;
+  -webkit-animation: imageScale 10s infinite;
+  -moz-animation: imageScale10s infinite;
+  -o-animation: imageScale 10s infinite;
+}
+
+@keyframes imageScale {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+@-moz-keyframes imageScale {
+  0% {
+    -moz-transform: scale(0.75);
+  }
+  20% {
+    -moz-transform: scale(1);
+  }
+  40% {
+    -moz-transform: scale(0.75);
+  }
+  60% {
+    -moz-transform: scale(1);
+  }
+  80% {
+    -moz-transform: scale(0.75);
+  }
+  100% {
+    -moz-transform: scale(0.75);
+  }
+}
+
+@-o-keyframes imageScale {
+  0% {
+    -o-transform: scale(0.75);
+  }
+  20% {
+    -o-transform: scale(1);
+  }
+  40% {
+    -o-transform: scale(0.75);
+  }
+  60% {
+    -o-transform: scale(1);
+  }
+  80% {
+    -o-transform: scale(0.75);
+  }
+  100% {
+    -o-transform: scale(0.75);
+  }
+}
+
+@-webkit-keyframes imageScale {
+  0% {
+    -webkit-transform: scale(0.75);
+  }
+  20% {
+    -webkit-transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(0.75);
+  }
+  60% {
+    -webkit-transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(0.75);
+  }
+  100% {
+    -webkit-transform: scale(0.75);
   }
 }

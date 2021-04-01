@@ -10,6 +10,8 @@ Estudando sobre animação em CSS
 
 Basic Declaration & Usage
 
+**Não se esqueça de por as propriedades em -webkit-,-moz- ,-o-**
+
 ```css
 .NAME-YOUR-ANIMATIO {
   animation: NAME-YOUR-ANIMATION 10s;
